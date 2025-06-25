@@ -17,6 +17,10 @@
     &.artists.colored{
         background-color: var(--green);
     }
+
+    &.shop.colored{
+        background-color: var(--yellow);
+    }
 }
 
 .header {
@@ -261,9 +265,6 @@
     width: 44px;
     height: 44px;
 }
-
-
-
 
 
 
@@ -765,6 +766,28 @@
             top: auto;
             bottom: 0;
             right: 0%;
+            width: 22vw;
+        }
+    }
+
+    .shop{
+        #img1{
+            width: 18vw;
+            top: 14%;
+            left: 2%;
+        }
+
+        #img2 {
+            left: auto;
+            top: -3%;
+            right: 3%;
+            width: 30vw;
+        }
+        
+        #img3 {
+            top: auto;
+            bottom: -7%;
+            right: 32%;
             width: 22vw;
         }
     }
