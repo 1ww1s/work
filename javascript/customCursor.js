@@ -1,3 +1,7 @@
+
+
+
+
 const cursor = document.getElementById('custom-cursor');
 
 function setCursor(selector, img_link){
@@ -17,11 +21,4 @@ function setCursor(selector, img_link){
         cursor.style.left = `${e.clientX + 10}px`; 
         cursor.style.top = `${e.clientY + 10}px`;
     }
-
 }
-
-
-setCursor('.block1', '../images/poster_cursor.png')
-setCursor('.block2', '../images/artist_cursor.png')
-setCursor('.block3', '../images/merch_cursor.png')
-setCursor('.block4', '../images/tickets_cursor.png')

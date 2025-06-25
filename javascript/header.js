@@ -39,3 +39,15 @@ function onLeave(e){
 
 header.addEventListener('mouseleave', onLeave)
 headers.forEach(h => h.addEventListener('mouseenter', onEnter))
+
+const logo_header = document.querySelector('.logo')
+
+logo_header.addEventListener('mouseenter', () => {
+    const styles = window.getComputedStyle(main_wrapper_bg);
+    const bgColor = styles.backgroundColor;
+    logo_header.firstElementChild.lastElementChild.style.fill = bgColor;
+})
+
+logo_header.addEventListener('mouseleave', () => {
+    logo_header.firstElementChild.lastElementChild.style.fill = '#000000';
+})

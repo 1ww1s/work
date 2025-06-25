@@ -3,6 +3,7 @@
 .main_wrapper{
     width: 100%;
     height: 100%;
+    background-color: var(--background);
     transition: background-color var(--time) ease;
 
     &.home.colored{
@@ -38,12 +39,15 @@
             align-items: center;
         }
 
+        .circle{
+            .sign{
+                fill: #000000;
+            }
+        }
+
         .logo:hover{
             .circle{
                 fill: #000000;
-            }
-            .sign{
-                fill: var(--yellow);
             }
         }
 
@@ -635,6 +639,15 @@
 
 /* page artists */
 
+#infs{
+    margin-bottom: 100px;
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+}
+
 .desc{
     display: grid;
     grid-template-columns: 1fr 1fr;    
@@ -653,38 +666,57 @@
     }
 }
 
-.carousel-container {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    touch-action: none;
-}
-
-.carousel-track {
+#grizzlycus, #bear_funny{
     display: flex;
-    height: 100%;
-    will-change: transform;
-    user-select: none;
-    cursor: grab;
-}
-
-.carousel-slide {
-    flex: 0 0 25vw;
-    height: 100%;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    flex-shrink: 0;
+    align-items: center;
+    width: 100%;
+    img{
+        height: 100%;;
+        width: 84vw;
+        max-width: 90vw;
+        object-fit: contain;
+    }
 }
 
-.carousel-slide img {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: contain;
-    pointer-events: none;
-}
+/* carousel */
+
+    .carousel-container {
+        width: 100%;
+        height: 30vw;
+        overflow: hidden;
+        position: relative;
+        touch-action: none;
+    }
+
+    .carousel-track {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        will-change: transform;
+        user-select: none;
+        cursor: grab;
+    }
+
+    .carousel-slide {
+        flex: 0 0 24vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .carousel-slide img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        pointer-events: none;
+    }
+
 /* */
+   
+/* end artists */
 
 
 /* паралакс */
@@ -698,25 +730,26 @@
     }
 
     #img1 {
-        top: 7%;
-        left: 2%;
+        top: 10%;
+        left: 6%;
+        width: 20vw;
     }
 
     #img2 {
         top: 54%;
         left: 36%;
-        width: 440px;
+        width: 28vw;
     }
 
     #img3 {
         top: -2%;
-        right: -4%;
-        width: 460px;
+        right: 0;
+        width: 30vw;
     }
 
     .artists{
         #img1{
-            width: 600px;
+            width: 40vw;
             top: 18%;
             left: -7%;
         }
@@ -725,14 +758,14 @@
             top: 5%;
             left: auto;
             right: 25%;
-            width: 300px;
+            width: 20vw;
         }
         
         #img3 {
             top: auto;
             bottom: 0;
             right: 0%;
-            width: 320px;
+            width: 22vw;
         }
     }
 /*  */

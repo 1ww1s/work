@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Создаем 3 копии для бесконечного эффекта
     function createSlides() {
         track.innerHTML = '';
-        const slidesToShow = [...photos, ...photos, ...photos];
+        const slidesToShow = [...photos, ...photos, ...photos, ...photos];
         
         slidesToShow.forEach((photo, index) => {
             const slide = document.createElement('div');
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let lastPosX = 0;
     let lastTime = 0;
     let animationId = null;
-    const autoScrollSpeed = 0.1; // Скорость автоскролла
+    const autoScrollSpeed = 0.05; // Скорость автоскролла
     
     function updatePosition(withTransition = false) {
         track.style.transition = withTransition ? 'transform 0.5s ease-out' : 'none';
